@@ -188,8 +188,8 @@ hist_xx=np.linspace(np.min(hist_x),np.max(hist_x),300)
 plt.plot(hist_xx, gaussian(hist_x,*popt), 'r-', label='Gaussian fit')
 plt.grid()   # grid on
 plt.legend()
-plt.text(149, 4750,'mean :'+ str(round(mean,2)) )        # describe mean on plot
-plt.text(149, 4550,'sigma :'+ str(round(sigma,2)) )      # describe sigma on plot
+plt.text(149, 4750,'mean :'+ str(round(popt[1],2)) )        # describe mean on plot
+plt.text(149, 4550,'sigma :'+ str(round(popt[2],2)) )      # describe sigma on plot
 plt.xlabel('invariant mass [GeV]')
 plt.ylabel('Number of events')
 plt.show
